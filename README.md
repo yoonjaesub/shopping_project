@@ -3,7 +3,8 @@
 
 <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/index.PNG" width="800 " height="500">
 ## 메인페이지 입니다.
-- header 부분을 position fixed로 고정시켜 놓았으며 휴대폰 배경이미지에 5개의 이미지가 차례대로 나타나고 사라지는 애니메이션을 Jquery의 .animate 효과로 주었습니다.
+=========================
+		header 부분을 position fixed로 고정시켜 놓았으며 휴대폰 배경이미지에 5개의 이미지가 차례대로 나타나고 사라지는 애니메이션을 Jquery의 .animate 효과로 주었습니다.
 
 <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/searchBox.PNG" width="800" height="500">
 ## 검색박스입니다. 
