@@ -11,6 +11,7 @@
   애니메이션을 Jquery의 .animate 효과로 주었습니다.
   ```
 
+
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/searchBox.PNG" width="800" height="500">
 
   ### 검색박스 
@@ -22,6 +23,7 @@
   (기능 추가예정)
   ```
 
+
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/footer.PNG" width="800" height="500">
 
   ### Footer
@@ -30,14 +32,16 @@
   하단부분 디자인 입니다.
   ```
 
+
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/join.PNG" width="800" height="500">
 
   ### 회원가입
 
   ```
   각 input에 값을 넣으면 해당 데이터들을 바탕으로 데이터베이스에 신규회원이 생성됩니다
-  insert문 사용
+  insert문을 사용했습니다.
   ```
+  
   
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/login.PNG" width="800" height="500">
 
@@ -45,18 +49,25 @@
 
   ```
   select / where 문을 사용해 
-  해당 아이디와 패스워드를 가진 유저가 있는지 확인 후 
+  해당 아이디와 패스워드를 가진 유저가 데이터베이스 내에 있는지 확인 후 
   로그인 처리를 실행하도록 하였습니다.
   ```
+  
   
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/alert.PNG" width="800" height="500">
   
   ```
-  만약 로그인시 아이디 혹은 패스워드 값이 일치하지 않거나 비어있는 경우 
+  만약 로그인시 아이디 혹은 패스워드 값이 일치하지 않거나 
+  입력하지 않은경우, 회원이 아닌 경우에는
   alert를 띄우고 비어있는 곳에 focus를 주도록 
   자바스크립트로 코드를 구현하였습니다.
   로그인 버튼에는 addEventListener를 사용하였습니다.
+  
+  추후에는 아이디만 틀렸을경우와 비밀번호만 틀렸을 경우
+  해당 내용을 alert로 알리고, 회원이 아닌 경우 회원가입을 해야한다는 알림이 나타나도록
+  if문을 이용하여 제작 예정입니다.
   ```
+  
   
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/login_header.PNG" width="800" height="100">
   
@@ -67,6 +78,7 @@
   로그아웃 버튼을 누르면 session.removeAttribute를 통해 세션값을 null값으로 변경하도록 하였습니다.
   ```
   
+  
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/mypage.PNG" width="800" height="500">
   
   ###  마이페이지
@@ -74,8 +86,10 @@
   ```
   select문을 사용하여 패스워드를 제외한 
   데이터베이스 내 기록되어있는 해당 유저의 정보를 나타내도록 하였습니다.
+  where 에는 세션에 유지중인 회원의 아이디값이 들어가도록 하였습니다.
   정보 수정과 회원탈퇴는 java script의 location.href로 페이지 이동을 적용하였습니다.
   ```
+  
   
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/edit.PNG" width="800" height="500">
   
@@ -83,7 +97,7 @@
   
   ```
   
-  
+  ```
   
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/exit.PNG" width="800" height="500">
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_index.PNG" width="800" height="500">
