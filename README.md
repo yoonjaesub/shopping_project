@@ -2,14 +2,25 @@
 - 쇼핑몰 사이트 jsp 구현 프로젝트
 
 <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/index.PNG" width="800 " height="500">
-## 메인페이지 입니다.
+
+### 메인페이지 입니다.
+
 ```
 header 부분을 position fixed로 고정시켜 놓았으며 
-휴대폰 이미지에 5개의 배경 이미지가 차례대로 나타나고 사라지는 애니메이션을 Jquery의 .animate 효과로 주었습니다.
+휴대폰 이미지에 5개의 배경 이미지가 차례대로 나타나고 사라지는 
+애니메이션을 Jquery의 .animate 효과로 주었습니다.
 ```
-<img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/searchBox.PNG" width="800" height="500">
-## 검색박스입니다. 
-- position absolute와 z-index를 주었으며 찾으려는 단어를 입력 후 버튼을 누르면 게시글(공지사항, 이벤트 등)에서 해당 내용을 찾습니다 (기능 추가예정)
+
+  <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/searchBox.PNG" width="800" height="500">
+
+### 검색박스입니다. 
+
+```
+position absolute와 z-index를 주었으며 
+찾으려는 단어를 입력 후 버튼을 누르면 
+게시글(공지사항, 이벤트 등)에서 해당 내용을 찾습니다 
+(기능 추가예정)
+```
   
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/footer.PNG" width="800" height="500">
   하단부분 디자인 입니다
