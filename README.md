@@ -96,8 +96,30 @@
   ### 정보수정창
   
   ```
-  
+  select 문을 이용하여 데이터베이스 내에 정보를 불러오도록 작성하였습니다.
+  아이디값의 경우는 세션에 유지중인 아이디를 나타내도록 작성하였습니다.
+  작성 후 변경버튼을 누르면 update 문을 사용하여 변경되도록 작성하였고, 
+  마찬가지로 where 에는 세션에 유지중인 아이디값을 넣었습니다.
   ```
   
+  
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/exit.PNG" width="800" height="500">
+  
+  ### 회원탈퇴창
+  
+  ```
+  delete문을 이용하여 작성하였으며, where에는 세션에 유지중인 패스워드 값을 넣었습니다.
+  세션에 유지중인 패스워드와 다른 값을 입력하면 
+  패스워드가 틀렸다고 alert 창을 띄우도록 하였습니다.
+  ```
+  
+  
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_index.PNG" width="800" height="500">
+  
+  ### 관리자페이지
+  
+  ```
+  로그인시 관리자의 아이디와 패스워드로 로그인하면
+  관리자 페이지로 이동할 수 있도록 if문과 javascript 의 location을 이용하였습니다.
+  관리자 페이지는 현재 작성 예정중에 있습니다.
+  ```
