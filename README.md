@@ -113,6 +113,33 @@
   패스워드가 틀렸다고 alert 창을 띄우도록 하였습니다.
   ```
   
+  <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/company_come.PNG" width="800" height="500">
+  
+  ### 오시는길 페이지
+  
+  ```
+  카카오에서 제공하는 지도 API를 사용하여 온수역을 좌표값으로 설정하였습니다.
+  추가적으로 카카오에서 제공하는 마커기능을 이용하여 마커를 표기하였습니다.
+  ```
+  
+  
+  <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/cosmetics.PNG" width="800" height="500">
+  
+  ### 화장품 페이지
+  
+  ```
+  화장품 페이지 입니다.
+  실제 데이터 베이스에 있는 상품명, 브랜드, 용량, 가격을 출력하도록 하였으며,
+  이미지의 경우 해당 상품의 제품번호를 파일명으로 주어서 while문을 이용하여 데이터베이스 내에 있는 갯수만큼 출력하도록 하였습니다.
+  
+  ex) 1번브랜드 제품코드 = 100001 부터 시작 -> 이미지파일 = 100001.jpg
+  다른 브랜드의 제품코드와 이미지 분류를 위하여 while문을 여러개 삽입하였습니다.
+  ex) 2번브랜드 제품코드 = 200001 부터 시작 -> 이미지파일 = 200001.jpg
+  
+  다만 while문을 한개의 jsp에서 여러번 사용하는것이 비효율 적이라는 지적을 받아
+  추후에는 화장품 메뉴바에 브랜드명을 a태그로 삽입하고 해당 값을 getParameter로 받아와서 while문을 여러개 쓰지않아도 되도록 처리할 예정입니다.
+  ```
+  
   
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_index.PNG" width="800" height="500">
   
