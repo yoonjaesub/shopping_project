@@ -123,7 +123,7 @@
   ```
   
   
-  <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/cosmetics.PNG" width="800" height="500">
+  <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/cosmatics.PNG" width="800" height="500">
   
   ### 화장품 페이지
   
