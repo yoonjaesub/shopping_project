@@ -49,19 +49,19 @@ String password = (String) session.getAttribute("password");
         <ul>
             <li id="company">Company
                 <a href="companyInst.jsp">회사소개</a>
-                <a href="">오시는길</a>
+                <a href="company_come.jsp">오시는길</a>
                 <a href="">연혁</a>
                 <a href="">조직</a>
             </li>
             <li id="product">Product
-                <a href="">화장품</a>
-                <a href="">신발</a>
-                <a href="">가방</a>
-                <a href="">점퍼</a>
-                <a href="">향수</a>
-                <a href="">시계</a>
-                <a href="">란제리</a>
-                <a href="">기타</a>
+                <a href="cosmetics.jsp">화장품</a>
+	            <a href="">신발</a>
+	            <a href="">가방</a>
+	            <a href="">점퍼</a>
+	            <a href="">향수</a>
+	            <a href="">시계</a>
+	            <a href="">란제리</a>
+	            <a href="">기타</a>
             </li>
             <li id="service">Service
                 <a href="">온라인 상담 서비스</a>
