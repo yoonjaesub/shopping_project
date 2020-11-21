@@ -54,7 +54,7 @@ String password = (String) session.getAttribute("password");
                 <a href="">조직</a>
             </li>
             <li id="product">Product
-                <a href="cosmetics.jsp">화장품</a>
+                <a href="cosmetics.jsp?brand=전체보기">화장품</a>
 	            <a href="">신발</a>
 	            <a href="">가방</a>
 	            <a href="">점퍼</a>

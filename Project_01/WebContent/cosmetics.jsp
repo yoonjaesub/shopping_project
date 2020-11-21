@@ -14,6 +14,8 @@
 #sidemenu ul li {text-align: center; margin-bottom: 10px; cursor: pointer; color:#666;}
 #sidemenu ul li:hover {font-weight: bold;}
 #sidemenu ul li:first-child {margin-top: 30px; margin-bottom: 40px; text-align: left; color:black;}
+#sidemenu ul li a {color: #666;}
+#sidemenu ul li a:hover { font-weight: bold;}
 
 
 #itemBox {width: 79%; float: right; height: 1000px;}
@@ -34,13 +36,12 @@
 	<div id="sidemenu">
 		<ul>
 			<li><h1>화장품</h1></li>
-			<li>입생로랑</li>
-			<li>키엘</li>
-			<li>랑콤</li>
-			<li>디올</li>
-			<li>MAC</li>
-			<li>설화수</li>
-			<li>에스티 로더</li>
+			<li><a href="cosmetics.jsp?brand=전체보기">전체보기</a></li>
+			<li><a href="cosmetics.jsp?brand=입생로랑">입생로랑</a></li>
+			<li><a href="cosmetics.jsp?brand=키엘">키엘</a></li>
+			<li><a href="cosmetics.jsp?brand=MAC">MAC</a></li>
+			<li><a href="cosmetics.jsp?brand=설화수">설화수</a></li>
+			<li><a href="cosmetics.jsp?brand=에스티로더">에스티 로더</a></li>
 		</ul>
 	</div>
 	<div id="itemBox">
@@ -51,11 +52,17 @@
 	 	ResultSet rs;
 	 	String pname, brand, pno, pspec, commaPrice;
 	 	int price;
+	 	String s_brand = request.getParameter("brand");
 	 	try{
 	 		conn = DBcon.getConnection();
-	 		String sql = "select pno, brand, pname, pspec, price from product_tbl where brand = '입생로랑'";
-	 		
-	 		pstmt = conn.prepareStatement(sql);
+	 		if(s_brand.equals("전체보기")){
+	 			String sql = "select pno, brand, pname, pspec, price from product_tbl";
+	 			pstmt = conn.prepareStatement(sql);
+	 		}else{
+	 			String sql = "select pno, brand, pname, pspec, price from product_tbl where brand = ?";
+	 			pstmt = conn.prepareStatement(sql);
+	 			pstmt.setString(1, s_brand);
+	 		}
 	 		rs = pstmt.executeQuery();
 	 		
 	 		while(rs.next()) {
@@ -66,7 +73,6 @@
 	 			price = rs.getInt("price");
 	 			commaPrice = String.format("%,d",price);
 	 			%>
-	 	
 	 	<div>
 			<img src="./img/<%=pno %>.jpg" alt="" onmouseover="this.src='./img/<%=pno%>1.jpg'" onmouseout="this.src='./img/<%=pno%>.jpg'"/>
 			<ul class="itemInfo">
@@ -78,32 +84,6 @@
 		</div>
 		<%
 	 		}
-	 		
-	 		sql = "select pno, brand, pname, pspec, price from product_tbl where brand = '키엘'";
-	 		pstmt = conn.prepareStatement(sql);
-	 		rs = pstmt.executeQuery();
-	 		
-	 		while(rs.next()) {
-	 			pno = rs.getString("pno");
-	 			brand = rs.getString("brand");
-	 			pname = rs.getString("pname");
-	 			pspec = rs.getString("pspec");
-	 			price = rs.getInt("price");
-	 			commaPrice = String.format("%,d",price);
-	 			%>
-	 	<div>
-			<img src="./img/<%=pno %>.jpg" alt="" onmouseover="this.src='./img/<%=pno%>1.jpg'" onmouseout="this.src='./img/<%=pno%>.jpg'"/>
-			<ul class="itemInfo">
-				<li><%=brand%></li>
-				<li><%=pname%></li>
-				<li><%=pspec %></li>
-				<li><%=commaPrice%> 원</li>
-			</ul> 
-		</div>
-	 		<%}
-	 		
-	 		
-	 	
 	 	}catch(Exception e){
 	 		System.out.println("DB Connection error : " + e);
 	 	}finally{
@@ -115,15 +95,6 @@
 	 		}
 	 	}
 	 	%>
-		
-		<div>
-		</div>
-		<div>
-		</div>
-		<div>
-		</div>
-		<div>
-		</div>
 	</div>
 </section>
 <%@ include file = "index_footer.jsp" %>
