@@ -156,3 +156,88 @@
   관리자 페이지로 이동할 수 있도록 if문과 javascript 의 location을 이용하였습니다.
   관리자 페이지는 현재 작성 예정중에 있습니다.
   ```
+
+---------------2020/11/25-----------------------
+
+<img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_List.PNG" width="800" height="500">
+
+### 회원 목록 보기
+
+```
+관리자페이지에서 기타기능 > 회원목록/수정에 들어가면 해당 페이지가 나타납니다.
+현재 회원들의 목록이 나타나도록 select 문을 이용하였으며 password는 나타나지 않도록 하였습니다.
+또한 해당하는 회원의 아이디를 클릭하면 해당 회원의 정보 수정창으로 이동할 수 있도록 하였습니다.
+```
+
+
+<img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_edit.PNG" width="800" height="500">
+
+### 회원 정보 수정
+
+```
+회원 정보 수정화면입니다.
+아이디 값은 readonly로 변경이 불가하도록 하였습니다.
+변경할 값을 input에 넣고 수정하기 버튼을 누르면 회원정보가 수정되도록 하였습니다.
+SQL문은 update문을 사용하였으며 버튼에는 자바스크립트의 addEventListner > form.submit 을 이용하였습니다.
+```
+
+
+<img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_item.PNG" width="800" height="500">
+
+### 제품 등록
+
+```
+제품 등록 화면입니다.
+해당하는 값들을 input에 넣고 등록버튼을 누르면 데이터베이스에 신규 제품 데이터가 생성되도록 하였습니다.(insert)
+null값에 대해서는 javascript가 아닌 required 속성을 부여하였습니다. 
+javascript로 진행하면 if의 경우수가 많아 코드가 길어질까봐 사용하지 않았습니다.
+```
+
+<img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_item_alert.PNG" width="500" height="200">
+
+### 제품등록 알림창_1
+
+```
+제품을 등록하면 정상적으로 등록되었다고 alert를 이용하여 알림창을 띄우도록 했습니다.
+```
+
+
+<img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_item_alert2.PNG" width="500" height="200">
+
+### 제품등록 알림창_2
+
+```
+첫번째 알림창을 닫으면 confirm 창을 띄워, 추가적으로 상품을 등록할 것인지에 대한
+여부를 확인합니다. if문을 이용하였으며 확인을 누르면 다시 제품등록 페이지로 이동하도록 하였습니다.
+```
+
+
+<img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_item_alert3.PNG" width="500" height="200">
+
+### 제품등록 알림창_3
+
+```
+2번째 알림창인 confirm에서 취소를 누르면 메인페이지로 돌아간다는 
+alert창을 띄우고 관리자 메인페이지로 돌아가도록 하였습니다.
+```
+
+
+<img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_itemList.PNG" width="800" height="500">
+
+### 제품목록
+
+```
+제품목록 페이지입니다. 제품관리 > 제품목록 보기 메뉴를 통해 확인할 수 있습니다.
+현재 데이터베이스 내에 있는 제품의 정보들을 출력하도록 하였습니다 (select)
+또한 제품의 번호를 클릭하면 제품정보가 삭제되고 상품명을 클릭하면 제품의 정보를 업데이트 할 수 있도록 할 예정입니다.
+```
+
+
+<img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_itemDel_alert.PNG" width="500" height="200">
+
+### 제품삭제
+
+```
+제품목록에서 제품번호를 클릭하면 해당 confirm이 나타나도록 하였습니다.
+확인을 누르면 제품정보를 삭제하고, 취소를 누르면 이전화면으로 돌아가도록 할 예정입니다.
+```
