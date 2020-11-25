@@ -6,14 +6,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>YJS - 관리자 페이지</title>
 <link rel="stylesheet" href="./css/admin_main.css" />
 <style>
-.content {width: 100%; clear: both; height: 300px; padding-top: 150px;}
+.content {padding-top: 140px; width: 100%;}
 </style>
+<title>YJS - 관리자(상품삭제)</title>
 </head>
 <body>
-<%@ include file ="admin_header.jsp" %>
+<%@ include file = "admin_header.jsp" %>
 <section class="content">
+
 </section>
-<%@ include file ="index_footer.jsp" %>
+<%@ include file = "index_footer.jsp" %>

@@ -14,7 +14,7 @@
 #sidemenu ul li {text-align: center; margin-bottom: 10px; cursor: pointer; color:#666;}
 #sidemenu ul li:hover {font-weight: bold;}
 #sidemenu ul li:first-child {margin-top: 30px; margin-bottom: 40px; text-align: left; color:black;}
-#sidemenu ul li a {color: #666;}
+#sidemenu ul li a{color : #666;}
 #sidemenu ul li a:hover { font-weight: bold;}
 
 
@@ -44,6 +44,7 @@
 			<li><a href="cosmetics.jsp?brand=에스티로더">에스티 로더</a></li>
 		</ul>
 	</div>
+	
 	<div id="itemBox">
 	 <%
 	 	//이제 여기에 while문을 써서 div를 하나하나 늘려야 합니다.
@@ -73,7 +74,7 @@
 	 			price = rs.getInt("price");
 	 			commaPrice = String.format("%,d",price);
 	 			%>
-	 	<div>
+	 	 	<div>
 			<img src="./img/<%=pno %>.jpg" alt="" onmouseover="this.src='./img/<%=pno%>1.jpg'" onmouseout="this.src='./img/<%=pno%>.jpg'"/>
 			<ul class="itemInfo">
 				<li><%=brand%></li>
@@ -82,19 +83,18 @@
 				<li><%=commaPrice%> 원</li>
 			</ul>
 		</div>
-		<%
-	 		}
-	 	}catch(Exception e){
-	 		System.out.println("DB Connection error : " + e);
-	 	}finally{
-	 		try{
-	 			if(pstmt!=null) pstmt.close();
-	 			if(conn!=null)	conn.close();
-	 		}catch(Exception e){
-	 			System.out.println("DB Close error : " + e);
-	 		}
-	 	}
-	 	%>
+	 	 <%}
+		 	}catch(Exception e){
+		 		System.out.println("DB Connection error + " + e);
+		 	}finally{
+		 		try{
+		 			if(pstmt!=null) pstmt.close();
+		 			if(conn!=null) conn.close();
+		 		}catch(Exception e) {
+		 			System.out.println("DB Close error : " + e);
+		 		}
+		 	}
+	%>
 	</div>
 </section>
 <%@ include file = "index_footer.jsp" %>

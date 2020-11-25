@@ -4,17 +4,17 @@
 a { text-decoration: none;}
 ul { list-style: none;}
 .wrap { position: fixed; width: 100%;}
-.hd {width: 100%; height: 50px; border-bottom: 1px solid #eee;}
-.hd ul {width: 100%;}
+.hd {width: 100%; height: 50px; border-bottom: 1px solid #eee; background-color: white;}
+.hd ul {width: 100%; }
 .hd ul li:first-child {float: left;}
-.hd ul li:last-child {float: right; line-height: 50px; margin-right: 50px;}
+#logout {float: right; line-height: 50px; margin-right: 50px; cursor: pointer;}
 #logo {background-image: url("/img/logo.png"); width: 150px; height: 48px; display: block; display:block; background-repeat: no-repeat;}
 .gnb {width: 100%;}
 .gnb ul {width: 100%;}
 .gnb ul li {float: left; width: 20%; text-align: center; border-bottom: 1px solid #eee; height: 50px; line-height: 50px; font-size: 18px;
-			overflow: hidden;}
+			overflow: hidden; background-color: white;}
 .gnb ul li:hover {height: 300px; transition:1s;}
-.gnb ul li a {width: 100%; color: black; display: block;}
+.gnb ul li a {width: 100%; color: black; display: block; background-color: white;}
 .gnb ul li a:hover {background-color: #eee;}
 
 .ft {width: 100%; height: 200px; background-color: #fff; border-top: 1px solid #eee;}
