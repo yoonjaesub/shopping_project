@@ -6,20 +6,10 @@
 <html>
 <head>
 <link rel="stylesheet" href="./css/main.css" />
+<link rel="stylesheet" href="./css/bread.css" />
 <meta charset="UTF-8">
 <title>YJS - 회사소개</title>
 <style>
-.content {padding-top: 140px; width: 100%; height: 2000px;}
-#bread { border-bottom: 1px solid #eee; width: 100%; height: 30px; margin-bottom: 20px; display: block;}
-#bread ul li {float: left; margin-left: 50px;}
-#bread ul li:after {content : ">"; padding-left: 50px;}
-#bread ul li:last-child:after {content:none;}
-#bread ul li a {color: black;}
-.sub_menu { display: block; width: 100px; height: 20px; overflow: hidden; position: absolute; background-color: white; left: 320px; text-align: center;}
-.sub_menu:hover {height: 100px;}
-.sub_menu a { display: block;}
-.sub_menu a:hover {font-weight: bold;}
-
 .ban { width: 100%; height: 600px; background-image: url("./img/cominst_bg.jpg"); background-repeat: no-repeat; background-size: cover;}
 .ban ul li {float: left;}
 .ban_leftbox span {font-size: 70px; color: white; font-weight: bold;}
@@ -48,8 +38,8 @@
 			<li><a href="companyInst.jsp">Company</a></li>
 			<li class="sub_menu">회사소개
 				<a href="company_come.jsp">오시는길</a>
-				<a href="companyInst.jsp">연혁</a>
-				<a href="companyInst.jsp">조직</a>
+				<a href="history.jsp">연혁</a>
+				<a href="companyChart.jsp">조직</a>
 			</li>
 		</ul>
 	</breadcrumb>

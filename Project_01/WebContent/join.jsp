@@ -15,6 +15,7 @@
 .content table td {width: 200px;}
 .content table th {width: 100px;}
 .content input {width: 310px; height: 35px; text-align: center; margin-left: 30px; }
+#goods {width: 310px; height: 35px; margin-left: 30px; text-align: center;}
 #join_btn { width: 500px; height: 50px; margin-left: 50px; border: 2px solid #eee; font-size: 18px; font-weight: bold; border-radius: 20px; background-color: white;}
 #join_btn:hover {background-color: #eee; border: 2px solid #aaa;}
 </style>
@@ -39,7 +40,18 @@
 			</tr>
 			<tr>
 				<th><label for="goods">관심상품</label></th> 
-				<td><input type="text" name="goods" id="goods" /></td>
+				<td>
+					<select name="goods" id="goods">
+						<option value="시계">시계</option>
+						<option value="화장품">화장품</option>
+						<option value="신발">신발</option>
+						<option value="가방">가방</option>
+						<option value="점퍼">점퍼</option>
+						<option value="향수">향수</option>
+						<option value="란제리">란제리</option>
+						<option value="기타">기타</option>
+					</select>
+			</td>
 			</tr>
 			<tr>
 				<th><label for="phone">전화번호</label></th>

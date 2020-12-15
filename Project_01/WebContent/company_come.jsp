@@ -8,16 +8,6 @@
 <meta charset="UTF-8">
 <title>YJS - 오시는길</title>
 <style>
-.content {padding-top: 140px; width: 100%;}
-#bread { border-bottom: 1px solid #eee; width: 100%; height: 30px; margin-bottom: 20px; display: block;}
-#bread ul li {float: left; margin-left: 50px;}
-#bread ul li:after {content : ">"; padding-left: 50px;}
-#bread ul li:last-child:after {content:none;}
-#bread ul li a {color: black;}
-.sub_menu { display: block; width: 100px; height: 20px; overflow: hidden; position: absolute; background-color: white; left: 320px; text-align: center;}
-.sub_menu:hover {height: 100px;}
-.sub_menu a { display: block;}
-.sub_menu a:hover {font-weight: bold;}
 .info { width: 80%; height: 500px; margin: 0 auto; margin-top: 100px;}
 .bus {float: left; width: 50%;}
 .metro {float: right; width: 50%;}
@@ -27,6 +17,7 @@
 .green{ background-color: #0ABB0C;}
 .line7{ background-color: #69870E;}
 </style>
+<link rel="stylesheet" href="./css/bread.css" />
 <link rel="stylesheet" href="./css/main.css" />
 </head>
 <body>
@@ -38,8 +29,8 @@
 			<li><a href="companyInst.jsp">Company</a></li>
 			<li class="sub_menu">오시는길
 				<a href="companyInst.jsp">회사소개</a>
-				<a href="companyInst.jsp">연혁</a>
-				<a href="companyInst.jsp">조직</a>
+				<a href="history.jsp">연혁</a>
+				<a href="companyChart.jsp">조직</a>
 			</li>
 		</ul>
 	</breadcrumb>

@@ -1,0 +1,10 @@
+@charset "utf-8";
+#bread { border-bottom: 1px solid #eee; width: 100%; height: 30px; margin-bottom: 20px; display: block;}
+#bread ul li {float: left; margin-left: 50px;}
+#bread ul li:after {content : ">"; padding-left: 50px;}
+#bread ul li:last-child:after {content:none;}
+#bread ul li a {color: black;}
+.sub_menu { display: block; width: 100px; height: 20px; overflow: hidden; position: absolute; background-color: white; left: 320px; text-align: center;}
+.sub_menu:hover {height: 100px;}
+.sub_menu a { display: block;}
+.sub_menu a:hover {font-weight: bold;}

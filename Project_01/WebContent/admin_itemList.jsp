@@ -55,9 +55,9 @@
 						brand = rs.getString("brand");
 			%>
 			<tr>
-				<td><a href="admin_itemDelAlert.jsp?pno="<%=pno%>"><%=pno %></a></td>
+				<td><a href="admin_itemDelAlert.jsp?pno=<%=pno%>"><%=pno %></a></td>
 				<td><%=pid %></td>
-				<td><a href="admin_itemEdit.jsp"><%=pname %></a></td>
+				<td><a href="admin_itemEdit.jsp?pname=<%=pname%>"><%=pname %></a></td>
 				<td><%=pspec %></td>
 				<td><%=price %></td>
 				<td><%=count %></td>

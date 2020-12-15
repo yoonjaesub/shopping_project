@@ -32,8 +32,8 @@ String password = (String) session.getAttribute("password");
 			<li>제품관리
 				<a href="admin_itemList.jsp">제품목록 보기</a>
 				<a href="admin_item.jsp">제품 등록</a>
-				<a href="">제품 삭제</a>
-				<a href="">제품 정보 수정</a>
+				<a href="admin_itemDel_page.jsp">제품 삭제</a>
+				<a href="admin_itemEdit_page.jsp">제품 정보 수정</a>
 				<a href="">판매 목록</a>
 			</li>
 			<li>서비스 관리

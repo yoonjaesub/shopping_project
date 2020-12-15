@@ -50,8 +50,8 @@ String password = (String) session.getAttribute("password");
             <li id="company">Company
                 <a href="companyInst.jsp">회사소개</a>
                 <a href="company_come.jsp">오시는길</a>
-                <a href="">연혁</a>
-                <a href="">조직</a>
+                <a href="history.jsp">연혁</a>
+                <a href="companyChart.jsp">조직</a>
             </li>
             <li id="product">Product
                 <a href="cosmetics.jsp?brand=전체보기">화장품</a>
@@ -66,7 +66,7 @@ String password = (String) session.getAttribute("password");
             <li id="service">Service
                 <a href="">온라인 상담 서비스</a>
                 <a href="">원격 상담 서비스</a>
-                <a href="">전화 상담 서비스</a>
+                <a href="QnA.jsp">1:1 고객 문의 서비스</a>
                 <a href="">문자 상담 서비스</a>
             </li>
             <li id="community">Community

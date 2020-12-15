@@ -11,7 +11,7 @@
 <body>
 <%
 	String pno = request.getParameter("pno");
-	System.out.println(pno);
+	
 %>
 <script>
 var check = confirm("정말로 해당 제품을 삭제하시겠습니까?");
@@ -19,6 +19,7 @@ if(check){
 	location.href = "admin_itemDel.jsp?pno=<%=pno%>";
 }else{
 	confirm.close;
+	location.href = "admin_itemList.jsp";
 }
 </script>
 </body>
