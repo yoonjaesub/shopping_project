@@ -135,7 +135,7 @@
    이미지로 대체하려다가 간단하게 태그들을 이용해서 간략히 작성해보았습니다.
    ```
    
-  <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/history.PNG" width="800" height="500">
+  <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/companyChart.PNG" width="800" height="500">
   
   ### 조직도 페이지
   
@@ -253,6 +253,10 @@ alert창을 띄우고 관리자 메인페이지로 돌아가도록 하였습니�
 현재 데이터베이스 내에 있는 제품의 정보들을 출력하도록 하였습니다 (select)
 또한 제품의 번호를 클릭하면 제품정보가 삭제되고 상품명을 클릭하면 제품의 정보를 업데이트 할 수 있도록 할 예정입니다.
 ```
+-----------20/12/15-----------
+```
+제품의 번호, 명칭을 클릭시 삭제, 수정을 할 수 있도록 기능을 추가하였습니다.
+```
 
 
 <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_itemDel_alert.PNG" width="500" height="200">
@@ -264,7 +268,7 @@ alert창을 띄우고 관리자 메인페이지로 돌아가도록 하였습니�
 확인을 누르면 제품정보를 삭제하고, 취소를 누르면 이전화면으로 돌아가도록 하였습니다.
 ```
 
-<img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_itemLDel.PNG" width="800" height="500">
+<img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_itemDel.PNG" width="800" height="500">
 
 ### 제품삭제 페이지
 
