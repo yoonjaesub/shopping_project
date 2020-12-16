@@ -19,6 +19,7 @@
 #form1 * {height: 30px; margin-top: 10px;}
 #form1 select {width: 100px;}
 #form1 button {width: 80px;}
+#qtit { font-weight: bold; color: #8af; cursor: pointer;}
 </style> 
 </head>
 <body>
@@ -53,8 +54,15 @@
 			
 			try{
 				conn = DBcon.getConnection();
-				String sql = "select qnum, qtit, qdate, custid from qna_tbl";
+				if(uid.equals("admin")){
+				String sql = "select qnum, qtit, qdate, custid from qna_tbl order by qnum desc";
 				pstmt = conn.prepareStatement(sql);
+				}else{
+				String sql = "select qnum, qtit, qdate, custid from qna_tbl where custid = ? order by qnum desc";
+				
+				pstmt = conn.prepareStatement(sql);
+				pstmt.setString(1, uid);
+				}
 				rs = pstmt.executeQuery();
 				
 				while(rs.next()){
@@ -64,9 +72,10 @@
 					custid = rs.getString("custid");
 					sqdate = simple.format(qdate);
 		%>
+		
 		<tr>
 			<td><%=qnum %></td>
-			<td><a href=""><%=qtit %></a></td>
+			<td><a href="QnA_view.jsp?qtit=<%=qtit%>"><%=qtit %></a></td>
 			<td><%=sqdate %></td>
 			<td><%=custid %></td>
 		</tr>
@@ -94,4 +103,5 @@
 		<button type="button">글찾기</button>
 	</form>
 </div>
+
 <%@ include file = "index_footer.jsp" %>

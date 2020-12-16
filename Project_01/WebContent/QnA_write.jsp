@@ -9,6 +9,15 @@
 <title>YJS - 1:1문의 글쓰기</title>
 <link rel="stylesheet" href="./css/main.css" />
 <link rel="stylesheet" href="./css/bread.css" />
+<style>
+	.content table {width: 60%; margin: 0 auto; border: 1px solid #333; height: 500px;}
+	.content table th {width: 20%;}
+	.content table td {width: 80%;}
+	.content table td input {width: 90%; height: 30px; font-weight: bold;}
+	.content table td textarea {width: 90%; height: 400px; font-size: 14px;}
+	.content form { text-align: center;}
+	#write_btn {width: 100px; margin: 20px; height: 50px;}
+</style>
 </head>
 <body>
 <%@ include file = "index_header.jsp" %>
@@ -43,14 +52,16 @@
 		
 		try{
 			conn = DBcon.getConnection();
-			String sql = "select qnum from qna_tbl";
+			String sql = "select qnum from qna_tbl order by qnum asc";
 			pstmt = conn.prepareStatement(sql);
 			rs = pstmt.executeQuery();
 			while(rs.next()){
 				qnum = rs.getInt("qnum");
+				System.out.println(qnum);
 				
 			}
 			number = qnum+1;
+			System.out.println(number);
 	%>
 		<table>
 			<tr>
