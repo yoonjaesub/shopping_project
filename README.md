@@ -34,12 +34,16 @@
 
 
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/join.PNG" width="800" height="500">
-
+  <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/join_update.PNG" width="800" height="500">
   ### 회원가입
 
   ```
   각 input에 값을 넣으면 해당 데이터들을 바탕으로 데이터베이스에 신규회원이 생성됩니다
   insert문을 사용했습니다.
+  ```
+  ----------2020/12/15------------
+  ```
+  회원가입시 관심상품에 입력할 수 있는 값이 광범위하여 select 를 통해 선택할 수 있는 값을 정해놓도록 수정하였습니다.
   ```
   
   
@@ -122,7 +126,25 @@
   추가적으로 카카오에서 제공하는 마커기능을 이용하여 마커를 표기하였습니다.
   ```
   
+   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/history.PNG" width="800" height="500">
+   
+   ### 연혁 페이지
+   
+   ```
+   회사의 연혁페이지 입니다.
+   이미지로 대체하려다가 간단하게 태그들을 이용해서 간략히 작성해보았습니다.
+   ```
+   
+  <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/companyChart.PNG" width="800" height="500">
   
+  ### 조직도 페이지
+  
+  ```
+  회사의 조직도 페이지 입니다.
+  그림판을 이용하여 웹사이트 자료들을 참조, 간단하게 작성하여 이미지 태그로 삽입하였습니다.
+  ```
+    
+    
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/cosmatics.PNG" width="800" height="500">
   
   ### 화장품 페이지
@@ -231,6 +253,10 @@ alert창을 띄우고 관리자 메인페이지로 돌아가도록 하였습니�
 현재 데이터베이스 내에 있는 제품의 정보들을 출력하도록 하였습니다 (select)
 또한 제품의 번호를 클릭하면 제품정보가 삭제되고 상품명을 클릭하면 제품의 정보를 업데이트 할 수 있도록 할 예정입니다.
 ```
+-----------20/12/15-----------
+```
+제품의 번호, 명칭을 클릭시 삭제, 수정을 할 수 있도록 기능을 추가하였습니다.
+```
 
 
 <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_itemDel_alert.PNG" width="500" height="200">
@@ -239,5 +265,73 @@ alert창을 띄우고 관리자 메인페이지로 돌아가도록 하였습니�
 
 ```
 제품목록에서 제품번호를 클릭하면 해당 confirm이 나타나도록 하였습니다.
-확인을 누르면 제품정보를 삭제하고, 취소를 누르면 이전화면으로 돌아가도록 할 예정입니다.
+확인을 누르면 제품정보를 삭제하고, 취소를 누르면 이전화면으로 돌아가도록 하였습니다.
+```
+
+<img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_itemDel.PNG" width="800" height="500">
+
+### 제품삭제 페이지
+
+```
+메뉴에서 제품삭제 탭을 누르면 삭제를 희망하는 제품의 번호입력시 삭제되도록 작성하였습니다.
+제품 목록에서 제품번호를 클릭하여 삭제하는 것과 동일한 프로세스로 작성하여 처리하였습니다.
+```
+
+
+<img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_itemEdit.PNG" width="800" height="500">
+
+### 제품정보변경
+
+```
+제품 목록보기에서 제품의 이름을 클릭하면 해당 상품의 정보를 변경할 수 있도록 처리하였습니다.
+제품번호의 경우 고유값이기 때문에 변경이 불가하도록 하였습니다.
+```
+
+
+<img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_itemEditPage.PNG" width="800" height="500">
+
+### 제품정보변경 페이지
+
+```
+메뉴에서 제품 정보 수정을 누르면 나타나는 화면입니다.
+변경하고자 하는 제품의 명칭을 입력하면 해당 제품의 정보를 수정할 수 있는 창으로 이동합니다.
+제품 목록에서 제품명을 클릭하였을때 이동하는것과 같은 프로세스로 작성하여 처리하였습니다.
+```
+
+<img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/QnA.PNG" width="800" height="500">
+
+### 1:1문의 페이지
+
+```
+일반사용자 메뉴탭에서 1:1 문의 탭을 통해 보여지는 화면입니다.
+사용자들의 QnA를 게시판 형식으로 작성하였습니다.
+글쓰기 버튼을 통해 글을 작성할 수 있습니다.
+작성일자의 경우 데이터베이스에 있는 값을 전달받은 뒤 simpleDateFormat을 이용하여 yy/DD/mm 형식으로 출력되도록 작성하였습니다.
+
+추후에 관리자일 경우에는 모든 글에 내용 접근이 가능하지만, 일반 사용자의 경우에는 글 내용을 확인하고자 접근할때, 해당 회원의 비밀번호를 확인하고
+일치하는 경우에만 해당 글의 내용과 댓글내용 / 글 수정 / 글 삭제 기능을 이용할 수 있도록 기능을 추가할 예정입니다.
+```
+
+
+<img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/QnA_alert.PNG" width="500" height="200">
+
+### 1:1 문의 작성 로그인 알림
+
+```
+1:1문의의 경우 작성시에 로그인이 필요하다고 생각이 되어 로그인을 하지 않았을 경우 작성을 하지 못하게 하였습니다.
+if문을 통해 세션에 담겨있는 유저아이디의 값이 비어있을 경우 로그인을 해야한다는 alert를 띄우고 로그인 페이지로 이동하도록 자바 스크립트를 활용하여 작성하였습니다.
+```
+
+
+<img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/QnA_write.PNG" width="800" height="500">
+
+### 1:1 문의 작성창
+
+```
+1:1문의 작성 화면입니다. 현재 css를 적용하지 않은 상태입니다. 추후 수정 예정
+글번호의 경우 자동적으로 가장 최신글의 글번호 +1 하여 기입되도록 작성하였습니다.
+작성자 부분의 경우 세션에 유지중인 회원의 아이디 값을 자동적으로 기입하도록 하였습니다.
+참고로 글번호와 작성자는 변경이 불가하도록 하였습니다.
+제목 또는 내용이 비어있을 경우 값이 입력되지 않았다는 alert 창이 나타나게 하였으며,
+작성날짜의 경우에는 데이터베이스에서 default 값을 sysdate로 주어 자동적으로 현재 날짜가 입력되도록 하였습니다.
 ```
