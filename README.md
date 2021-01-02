@@ -389,7 +389,7 @@ css를 적용한 1:1 문의 작성 화면입니다.
 <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/Comment_view.PNG" width="800" height="500">
 
 ### 게시글 보기 및 댓글
-###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/QnA_view_code.png)
+###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/Qna_view_code.png)
 
 ```
 게시글 제목을 누르면 해당 글의 내용을 볼 수 있는 화면으로 이동됩니다.
