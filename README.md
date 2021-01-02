@@ -4,6 +4,7 @@
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/index.PNG" width="800 " height="500">
 
   ### 메인페이지
+  [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/index.PNG)
 
   ```
   header 부분을 position fixed로 고정시켜 놓았으며 
