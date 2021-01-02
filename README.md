@@ -3,9 +3,9 @@
 
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/index.PNG" width="800 " height="500">
 
-  ### 메인페이지
-  [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/index.PNG)
-
+  ### 메인페이지 
+  ###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/index_code.PNG)
+  
   ```
   header 부분을 position fixed로 고정시켜 놓았으며 
   휴대폰 이미지에 5개의 배경 이미지가 차례대로 나타나고 사라지는 
@@ -36,11 +36,14 @@
 
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/join.PNG" width="800" height="500">
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/join_update.PNG" width="800" height="500">
+  
   ### 회원가입
-
+  ###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/.join_code.PNG)
+  
   ```
   각 input에 값을 넣으면 해당 데이터들을 바탕으로 데이터베이스에 신규회원이 생성됩니다
   insert문을 사용했습니다.
+  또한 javascript를 이용하여 input에 값이 비어있을경우 alert와 focus가 되도록 하였습니다.
   ```
   ----------2020/12/15------------
   ```
@@ -51,7 +54,8 @@
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/login.PNG" width="800" height="500">
 
   ###  로그인 페이지
-
+  ###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/login_code.PNG)
+  
   ```
   select / where 문을 사용해 
   해당 아이디와 패스워드를 가진 유저가 데이터베이스 내에 있는지 확인 후 
@@ -76,6 +80,8 @@
   
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/login_header.PNG" width="800" height="100">
   
+  ###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/logout_code.PNG)
+  
   ```
   로그인을 하게 되면 세션에 해당 유저의 아이디와 패스워드값을 저장해놓도록 하였으며 (session.setAttribute)
   세션에 유지중인 아이디와 패스워드가 null값이 아닐경우 
@@ -87,6 +93,7 @@
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/mypage.PNG" width="800" height="500">
   
   ###  마이페이지
+  ###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/mypage_code.PNG)
   
   ```
   select문을 사용하여 패스워드를 제외한 
@@ -99,6 +106,7 @@
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/edit.PNG" width="800" height="500">
   
   ### 정보수정창
+  ###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/edit_code.PNG)
   
   ```
   select 문을 이용하여 데이터베이스 내에 정보를 불러오도록 작성하였습니다.
@@ -111,6 +119,7 @@
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/exit.PNG" width="800" height="500">
   
   ### 회원탈퇴창
+  ###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/delmem_code.PNG)
   
   ```
   delete문을 이용하여 작성하였으며, where에는 세션에 유지중인 패스워드 값을 넣었습니다.
@@ -121,6 +130,7 @@
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/company_come.PNG" width="800" height="500">
   
   ### 오시는길 페이지
+  ###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/company_come_code.PNG)
   
   ```
   카카오에서 제공하는 지도 API를 사용하여 온수역을 좌표값으로 설정하였습니다.
@@ -149,6 +159,7 @@
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/cosmatics.PNG" width="800" height="500">
   
   ### 화장품 페이지
+  ###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/cosmetics_code.PNG)
   
   ```
   화장품 페이지 입니다.
@@ -171,6 +182,7 @@
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/cosmatics_view_2.PNG" width="800" height="500">
   
   ### 제품 상세페이지
+  ###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/cosmetics_view_code.PNG)
   
   ```
   제품 페이지에서 해당 상품을 클릭하면 나타나는 화면입니다.
@@ -199,6 +211,7 @@
 <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_List.PNG" width="800" height="500">
 
 ### 회원 목록 보기
+###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_List_code.PNG)
 
 ```
 관리자페이지에서 기타기능 > 회원목록/수정에 들어가면 해당 페이지가 나타납니다.
@@ -210,6 +223,7 @@
 <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_edit.PNG" width="800" height="500">
 
 ### 회원 정보 수정
+###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_edit_code.PNG)
 
 ```
 회원 정보 수정화면입니다.
@@ -222,6 +236,7 @@ SQL문은 update문을 사용하였으며 버튼에는 자바스크립트의 add
 <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_item.PNG" width="800" height="500">
 
 ### 제품 등록
+###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_item_code.PNG)
 
 ```
 제품 등록 화면입니다.
@@ -262,6 +277,7 @@ alert창을 띄우고 관리자 메인페이지로 돌아가도록 하였습니�
 <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_itemList.PNG" width="800" height="500">
 
 ### 제품목록
+###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_itemList_code.PNG)
 
 ```
 제품목록 페이지입니다. 제품관리 > 제품목록 보기 메뉴를 통해 확인할 수 있습니다.
@@ -277,6 +293,7 @@ alert창을 띄우고 관리자 메인페이지로 돌아가도록 하였습니�
 <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_itemDel_alert.PNG" width="500" height="200">
 
 ### 제품삭제
+###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_itemDel_code.PNG)
 
 ```
 제품목록에서 제품번호를 클릭하면 해당 confirm이 나타나도록 하였습니다.
@@ -296,6 +313,7 @@ alert창을 띄우고 관리자 메인페이지로 돌아가도록 하였습니�
 <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_itemEdit.PNG" width="800" height="500">
 
 ### 제품정보변경
+###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_itemEdit_code.PNG)
 
 ```
 제품 목록보기에서 제품의 이름을 클릭하면 해당 상품의 정보를 변경할 수 있도록 처리하였습니다.
@@ -316,6 +334,7 @@ alert창을 띄우고 관리자 메인페이지로 돌아가도록 하였습니�
 <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/QnA.PNG" width="800" height="500">
 
 ### 1:1문의 페이지
+###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/QnA_code.PNG)
 
 ```
 일반사용자 메뉴탭에서 1:1 문의 탭을 통해 보여지는 화면입니다.
@@ -350,6 +369,7 @@ if문을 통해 세션에 담겨있는 유저아이디의 값이 비어있을 �
 <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/QnA_write.PNG" width="800" height="500">
 
 ### 1:1 문의 작성창
+###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/QnA_write_code.PNG)
 
 ```
 1:1문의 작성 화면입니다. 현재 css를 적용하지 않은 상태입니다. 추후 수정 예정
@@ -370,6 +390,7 @@ css를 적용한 1:1 문의 작성 화면입니다.
 <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/Comment_view.PNG" width="800" height="500">
 
 ### 게시글 보기 및 댓글
+###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/QnA_view_code.PNG)
 
 ```
 게시글 제목을 누르면 해당 글의 내용을 볼 수 있는 화면으로 이동됩니다.
