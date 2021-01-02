@@ -38,7 +38,7 @@
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/join_update.PNG" width="800" height="500">
   
   ### 회원가입
-  ###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/.join_code.PNG)
+  ###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/join_code.png)
   
   ```
   각 input에 값을 넣으면 해당 데이터들을 바탕으로 데이터베이스에 신규회원이 생성됩니다
@@ -80,8 +80,6 @@
   
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/login_header.PNG" width="800" height="100">
   
-  ###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/logout_code.PNG)
-  
   ```
   로그인을 하게 되면 세션에 해당 유저의 아이디와 패스워드값을 저장해놓도록 하였으며 (session.setAttribute)
   세션에 유지중인 아이디와 패스워드가 null값이 아닐경우 
@@ -89,6 +87,7 @@
   로그아웃 버튼을 누르면 session.removeAttribute를 통해 세션값을 null값으로 변경하도록 하였습니다.
   ```
   
+  ###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/logout_code.PNG)
   
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/mypage.PNG" width="800" height="500">
   
@@ -106,7 +105,7 @@
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/edit.PNG" width="800" height="500">
   
   ### 정보수정창
-  ###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/edit_code.PNG)
+  ###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/edit_code.png)
   
   ```
   select 문을 이용하여 데이터베이스 내에 정보를 불러오도록 작성하였습니다.
@@ -119,7 +118,7 @@
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/exit.PNG" width="800" height="500">
   
   ### 회원탈퇴창
-  ###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/delmem_code.PNG)
+  ###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/delmem_code.png)
   
   ```
   delete문을 이용하여 작성하였으며, where에는 세션에 유지중인 패스워드 값을 넣었습니다.
@@ -369,7 +368,7 @@ if문을 통해 세션에 담겨있는 유저아이디의 값이 비어있을 �
 <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/QnA_write.PNG" width="800" height="500">
 
 ### 1:1 문의 작성창
-###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/QnA_write_code.PNG)
+###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/QnA_write_code.png)
 
 ```
 1:1문의 작성 화면입니다. 현재 css를 적용하지 않은 상태입니다. 추후 수정 예정
@@ -390,7 +389,7 @@ css를 적용한 1:1 문의 작성 화면입니다.
 <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/Comment_view.PNG" width="800" height="500">
 
 ### 게시글 보기 및 댓글
-###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/QnA_view_code.PNG)
+###### [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/QnA_view_code.png)
 
 ```
 게시글 제목을 누르면 해당 글의 내용을 볼 수 있는 화면으로 이동됩니다.
