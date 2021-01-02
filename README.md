@@ -4,6 +4,7 @@
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/index.PNG" width="800 " height="500">
 
   ### 메인페이지
+  [코드보기](https://github.com/yoonjaesub/shopping_project/blob/main/img/index.PNG)
 
   ```
   header 부분을 position fixed로 고정시켜 놓았으며 
@@ -167,7 +168,21 @@
   좌측 사이드바를 통해 브랜드명을 클릭하면 해당 브랜드의 제품군만 나타나도록 하였습니다.
   while반복문은 1회만 작성하였으며, a태그의 href속성 / gerParameter로 값을 받아오도록 처리하였습니다.
   ```
+  <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/cosmatics_view_2.PNG" width="800" height="500">
   
+  ### 제품 상세페이지
+  
+  ```
+  제품 페이지에서 해당 상품을 클릭하면 나타나는 화면입니다.
+  제품의 명칭, 수량, 가격, 정보 등을 나타냅니다.
+  수량의 경우 for문을 이용해서 DB에 있는 수량만큼 나타낼 수 있도록
+  select의 option 을 이용하였습니다.
+  추후에는 DB의 테이블에 상품 설명 컬럼을 추가하여
+  상품 상세내용을 추가할 예정이며,
+  select에서 선택한 값 * 해당 제품의 가격으로,
+  수량에 따른 최종 결제금액을 나타내도록 할 예정입니다.
+  또한 장바구니와 결제기능은 아직 미완성입니다.
+  ```
   
   <img src="https://github.com/yoonjaesub/shopping_project/blob/main/img/admin_index.PNG" width="800" height="500">
   
