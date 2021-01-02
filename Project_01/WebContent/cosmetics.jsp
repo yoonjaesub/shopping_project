@@ -74,7 +74,7 @@
 	 			price = rs.getInt("price");
 	 			commaPrice = String.format("%,d",price);
 	 			%>
-	 	 	<div>
+	 	 <div id="item_view" onclick="location.href= 'cosmetics_view.jsp?pname=<%=pname%>'">
 			<img src="./img/<%=pno %>.jpg" alt="" onmouseover="this.src='./img/<%=pno%>1.jpg'" onmouseout="this.src='./img/<%=pno%>.jpg'"/>
 			<ul class="itemInfo">
 				<li><%=brand%></li>
@@ -96,5 +96,11 @@
 		 	}
 	%>
 	</div>
+<%-- 	<script>
+		var item_view = document.getElementById("item_view");
+		item_view.addEventListener("click",function(){
+			location.href = "cosmetics_view.jsp?pname = <%pname%>"
+		})
+	</script> --%>
 </section>
 <%@ include file = "index_footer.jsp" %>

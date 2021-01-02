@@ -89,6 +89,7 @@
 		cdate =rs.getDate("cdate");
 		cid = rs.getString("custid");
 		String sdate = simple.format(cdate);
+		System.out.println(cdate);
 	%>
 	
 		<tr>
